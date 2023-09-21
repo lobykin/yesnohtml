@@ -16,7 +16,9 @@
             justify-content: space-between;
             background-color: #FFFFFF; /* Set your desired background color */
         }
-
+        .font1 {
+            font-size: 100px;
+        }
         .button {
             flex: 1;
             text-align: center;
@@ -41,8 +43,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="button yes-button" onclick="playSound('yes.mp3')">☺</div>
-        <div class="button no-button" onclick="playSound('no.mp3')">☹</div>
+        <div class="button yes-button" onclick="playSound('yes.mp3')">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>☺</td>
+                </tr>
+                <tr>
+                  <td class="font1">ANO</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="button no-button" onclick="playSound('no.mp3')">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>☹</td>
+                </tr>
+                <tr>
+                  <td class="font1">NE</td>
+                </tr>
+              </table>
+            </div>
     </div>
 
     <script>
